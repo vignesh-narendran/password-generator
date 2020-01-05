@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>Password Generator</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+    <link href="/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="passBook">
+            <p class="heading">Password Generator</p>
+            <table>
+                <tr>
+                    <td>
+                        <input id="output" class="output" type="text">
+                    </td>
+                    <td>
+                        <input type="button" class="copyToClip" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="passCount">Password count</p>
+                    </td>
+                    <td>
+                        <input class="passCountBox" type="number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="caseSense">Include upper case letters</p>
+                    </td>
+                    <td>
+                        <label class="checkBox-label">
+                            <input class="caseSenseBox" type="checkbox">
+                            <span class="checkBoxcustom"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="symbols">Include special characters</p>
+                    </td>
+                    <td>
+                        <label class="checkBox-label">
+                            <input class="symbolBox" type="checkbox">
+                            <span class="checkBoxcustom"></span>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="numbers">Include numbers</p>
+                    </td>
+                    <td>
+                        <label class="checkBox-label">
+                            <input class="numberBox" type="checkbox">
+                            <span class="checkBoxcustom"></span>
+                        </label>
+                    </td>
+                </tr>
+            </table>
+            <input class="genBtn" type="button" value="Generate">
+        </div>
+    </div>
+</body>
+
+</html>
